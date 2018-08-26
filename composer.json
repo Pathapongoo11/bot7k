@@ -1,6 +1,7 @@
 {
   
     "require": {
-        "linecorp/line-bot-sdk": "^3.3"
+        "linecorp/line-bot-sdk": "^3.3",
+        "silex/silex": "~1.1"
     }
 }

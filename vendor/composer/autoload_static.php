@@ -6,7 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit910de0d4e6c04355a6f9edf12ec5f3f4
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Routing\\' => 26,
+            'Symfony\\Component\\HttpKernel\\' => 29,
+            'Symfony\\Component\\HttpFoundation\\' => 33,
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\Debug\\' => 24,
+            'Silex\\' => 6,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
         'L' => 
         array (
             'LINE\\' => 5,
@@ -14,9 +32,51 @@ class ComposerStaticInit910de0d4e6c04355a6f9edf12ec5f3f4
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Routing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/routing',
+        ),
+        'Symfony\\Component\\HttpKernel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-kernel',
+        ),
+        'Symfony\\Component\\HttpFoundation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
+        'Symfony\\Component\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Silex\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/silex/silex/src/Silex',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'LINE\\' => 
         array (
             0 => __DIR__ . '/..' . '/linecorp/line-bot-sdk/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Pimple' => 
+            array (
+                0 => __DIR__ . '/..' . '/pimple/pimple/lib',
+            ),
         ),
     );
 
@@ -25,6 +85,7 @@ class ComposerStaticInit910de0d4e6c04355a6f9edf12ec5f3f4
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit910de0d4e6c04355a6f9edf12ec5f3f4::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit910de0d4e6c04355a6f9edf12ec5f3f4::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit910de0d4e6c04355a6f9edf12ec5f3f4::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
