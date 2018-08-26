@@ -1,6 +1,6 @@
 <?php
 /// การตั้งค่าเกี่ยวกับ bot ใน LINE Messaging API
-define('LINE_MESSAGE_CHANNEL_ID','กรอก ค่า Channel ID');
-define('LINE_MESSAGE_CHANNEL_SECRET','กรอกค่า Channel secret');
-define('LINE_MESSAGE_ACCESS_TOKEN','กรอกค่า Channel access token');
+define('LINE_MESSAGE_CHANNEL_ID','1601277830');
+define('LINE_MESSAGE_CHANNEL_SECRET','b3bf04eea8d9a4a0c7dc7404aa82e7ff');
+define('LINE_MESSAGE_ACCESS_TOKEN','AD4BSrRam1iTdcQY5POWHmsaAY3sdRr4IbZ8BNkE9y9gCc9S04QJLha3iV/OYKO/EGTznnIj6498MIj7TiZzC2yPEW/Rg4D03t//SWkjVr6MFjk2Bu2yXId9zmRE5SdQKvqtgAFPK6YXfVUEiLVPygdB04t89/1O/w1cDnyilFU=');
 ?>
