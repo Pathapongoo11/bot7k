@@ -4,8 +4,8 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('CHANNEL_ACCESS_TOKEN'));
-$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('CHANNEL_SECRET')]);
+$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient(getenv('8145ezxPErMoAuB01jrZ3s73V88Ha9hDVmbDy6p99EBPAIuaSKrvtFGqK4tSiCZbEGTznnIj6498MIj7TiZzC2yPEW/Rg4D03t//SWkjVr63MPK4rK5FYW+/SPK0Ilx5TaNKECdsTfTkEkzKIgb3XlGUYhWQfeY8sLGRXgo3xvw='));
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => getenv('b3bf04eea8d9a4a0c7dc7404aa82e7ff')]);
 $signature = $_SERVER['HTTP_' . \LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 
 $events = $bot->parseEventRequest(file_get_contents('php://input'), $signature);
