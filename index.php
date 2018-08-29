@@ -15,10 +15,10 @@ foreach ($events as $event) {
     if($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
 
       if($event->getText() === 'create') {
-        $bot->replyMessage($event->getReplyToken(),new \LINE\LINEBot\MessageBuilder\TextMessageBuilder(createNewRichmenu(getenv('CHANNEL_ACCESS_TOKEN'))));
+        $bot->replyMessage($event->getReplyToken(),new \LINE\LINEBot\MessageBuilder\TextMessageBuilder(createNewRichmenu(getenv('8145ezxPErMoAuB01jrZ3s73V88Ha9hDVmbDy6p99EBPAIuaSKrvtFGqK4tSiCZbEGTznnIj6498MIj7TiZzC2yPEW/Rg4D03t//SWkjVr63MPK4rK5FYW+/SPK0Ilx5TaNKECdsTfTkEkzKIgb3XlGUYhWQfeY8sLGRXgo3xvw='))));
       }
       else if($event->getText() === 'list') {
-        $result = getListOfRichmenu(getenv('CHANNEL_ACCESS_TOKEN'));
+        $result = getListOfRichmenu(getenv('8145ezxPErMoAuB01jrZ3s73V88Ha9hDVmbDy6p99EBPAIuaSKrvtFGqK4tSiCZbEGTznnIj6498MIj7TiZzC2yPEW/Rg4D03t//SWkjVr63MPK4rK5FYW+/SPK0Ilx5TaNKECdsTfTkEkzKIgb3XlGUYhWQfeY8sLGRXgo3xvw='));
 
         if(isset($result['richmenus']) && count($result['richmenus']) > 0) {
           $builders = new \LINE\LINEBot\MessageBuilder\MultiMessageBuilder();
